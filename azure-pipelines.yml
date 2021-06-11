@@ -112,6 +112,7 @@ stages:
     dependsOn: Provision
     variables:
       WebAppNameDev: $[ dependencies.Provision.outputs['RunTerraform.WebAppNameDev'] ]
+      System.Debug: true
     pool:
       #vmImage: 'ubuntu-18.04'
       name: myAzure
